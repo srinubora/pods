@@ -1,2 +1,2 @@
 # pods
-[Screenshot 2024-11-14 235950](https://github.com/user-attachments/assets/a0458944-c347-419d-8f94-c85f47e65b08)
+[Screenshot 2024-11-14 235950](https://github.com/user-attachments/assets/dfa2c571-0bd3-4a94-add1-ec68ca27d4ce)
