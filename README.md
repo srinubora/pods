@@ -39,26 +39,47 @@ sudo kubectl version --client
 sudo curl -LO "https://dl.k8s.io/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl.sha256"
 sudo echo "$(cat kubectl.sha256) kubectl" | sha256sum --check
 sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
+
 sudo kubectl version --client
+
 sudo kubectl version --client --output=yaml
+
 sudo minikube start --driver=docker --force
+
 creation of pod
+
 kubectl run pod1 --image=nginx
-kubectl get pods
-vi srinu.yml
-apiVersion: v1
-kind: Pod
-metadata:
-  name: nginx
-spec:
-containers:
-  - name: nginx
-    image: nginx:1.14.2
-    ports:
-    - containerPort: 80
-kubectl create -f srinu.yml
+
 kubectl get pods
 
+vi srinu.yml
+
+apiVersion: v1
+
+kind: Pod
+
+metadata:
+
+  name: nginx
+  
+spec:
+
+containers:
+
+  - name: nginx
+
+    image: nginx:1.14.2
+    
+    ports:
+    
+    - containerPort: 80
+      
+kubectl create -f srinu.yml
+
+kubectl get pods
+
+![Screenshot 2024-11-14 235751](https://github.com/user-attachments/assets/b59aa89c-1a1e-42d5-a0c9-36f699fa2780)
+![Screenshot 2024-11-14 235545](https://github.com/user-attachments/assets/839c4a35-3f19-4692-9c43-15841d57f8d5)
 
 
 
