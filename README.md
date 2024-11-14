@@ -14,12 +14,15 @@ sudo curl -fsSL https://get.docker.com -o get-docker.sh
 
 # we need permison aslo
 chmod 700 get-docker.sh
+
 /.get docker.sh
 # docker version
 
 systemctl status docker
+![Screenshot 2024-11-14 234315](https://github.com/user-attachments/assets/bf7807c0-b94f-4e11-83b7-a1e3610aa50e)
 
 https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64 
+
 ll
 
 
