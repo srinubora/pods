@@ -24,5 +24,42 @@ systemctl status docker
 https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64 
 
 ll
+sudo mv minikube-linux-amd64 /usr/local/bin/minikube
+
+sudo chmod +x /usr/local/bin/minik be
+
+sudo minikube version
+
+sudo apt install curl wget apt-transport-https -y
+
+sudo curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+
+sudo kubectl version --client
+
+sudo curl -LO "https://dl.k8s.io/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl.sha256"
+sudo echo "$(cat kubectl.sha256) kubectl" | sha256sum --check
+sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
+sudo kubectl version --client
+sudo kubectl version --client --output=yaml
+sudo minikube start --driver=docker --force
+creation of pod
+kubectl run pod1 --image=nginx
+kubectl get pods
+vi srinu.yml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx
+spec:
+containers:
+  - name: nginx
+    image: nginx:1.14.2
+    ports:
+    - containerPort: 80
+kubectl create -f srinu.yml
+kubectl get pods
+
+
+
 
 
