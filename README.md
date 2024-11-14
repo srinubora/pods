@@ -73,13 +73,8 @@ containers:
     ports:
     
     - containerPort: 80
-      
-kubectl create -f srinu.yml
-
-kubectl get pods
 
 ![Screenshot 2024-11-14 235751](https://github.com/user-attachments/assets/b59aa89c-1a1e-42d5-a0c9-36f699fa2780)
-![Screenshot 2024-11-14 235545](https://github.com/user-attachments/assets/839c4a35-3f19-4692-9c43-15841d57f8d5)
 
 
 
