@@ -12,7 +12,7 @@ sudo curl -fsSL https://get.docker.com -o get-docker.sh
 
 ![Screenshot 2024-11-14 234116](https://github.com/user-attachments/assets/da2813c0-7b56-4580-9e73-e08e0ca3a0ce)
 
-# we need permison aslo
+# we need permison 
 chmod 700 get-docker.sh
 
 /.get docker.sh
